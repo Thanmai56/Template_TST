@@ -1,0 +1,41 @@
+order:
+  - source
+  - join
+  - projection
+  - filter
+  - output
+links:
+  ui_model_path: uiModel
+  nodes_path: nodes
+  node_id_field: id
+  successor_node_field: successorNode
+source_json:
+  name_fields:
+    - name
+    - entityName
+  fields_path: fields
+  columns_path: columns
+  definitions_path: definitions
+  elements_key: elements
+  field_name_fields:
+    - name
+    - columnName
+  field_type_fields:
+    - type
+    - dataType
+    - kind
+  nullable_field: nullable
+validation:
+  selected_columns_path: query.SELECT.columns
+  definitions_path: definitions
+  elements_key: elements
+  output_name_fields:
+    - as
+    - name
+    - ref
+  reference_field: ref
+  ui_model_path: uiModel
+  id_field: id
+  successor_fields:
+    - successorNode
+    - successorElement
